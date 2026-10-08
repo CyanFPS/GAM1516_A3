@@ -227,10 +227,22 @@ public class Mario : MonoBehaviour
         {
             EEnemyType enemyType = collision.gameObject.GetComponent<Enemy>().EnemyType;
 
+            // Normal Piranha Plant
             if (enemyType == EEnemyType.PiranhaPlant)
             {
                 PiranhaPlant piranhaPlant = collision.gameObject.GetComponent<PiranhaPlant>();
                 if (piranhaPlant.State != EPiranhaPlantState.Hiding)
+                {
+                    MarioHasDied(true);
+                }
+
+            }
+                
+            // Fire Piranha Plant
+            if (enemyType == EEnemyType.FirePiranhaPlant)
+            {
+                FirePiranhaPlant firePiranhaPlant = collision.gameObject.GetComponent<FirePiranhaPlant>();
+                if (firePiranhaPlant.State != EFirePiranhaPlantState.Hiding)
                 {
                     MarioHasDied(true);
                 }
