@@ -11,11 +11,13 @@ public class EnemySettings : ScriptableObject
     public float PiranhaPlantHiddenDurationMax = 4.0f;
 
     [Header("Fire Piranha Plant")]
-    public float FirePiranhaPlantOffsetY = 2.5f;
+    public float FirePiranhaPlantOffsetY = 2.0f;
     public float FirePiranhaPlantAnimationDuration = 0.75f;
-    public float FirePiranhaPlantActiveDuration = 2.5f;
+    public float FirePiranhaPlantActiveDuration = 3.0f;
     public float FirePiranhaPlantHiddenDurationMin = 2.0f;
     public float FirePiranhaPlantHiddenDurationMax = 4.0f;
+
+
 
     [Header("Goomba")]
     public float GoombaSpeed = 3.0f;

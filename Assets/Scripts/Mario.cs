@@ -237,8 +237,7 @@ public class Mario : MonoBehaviour
                 }
 
             }
-                
-            // Fire Piranha Plant
+                // Fire Piranha Plant
             if (enemyType == EEnemyType.FirePiranhaPlant)
             {
                 FirePiranhaPlant firePiranhaPlant = collision.gameObject.GetComponent<FirePiranhaPlant>();
@@ -246,6 +245,15 @@ public class Mario : MonoBehaviour
                 {
                     MarioHasDied(true);
                 }
+            }
+        }
+
+        if (collision.gameObject.CompareTag("Projectiles"))
+        {
+            Fireball fireballCollision = collision.gameObject.GetComponent<Fireball>();
+            if (fireballCollision != null)
+            {
+                MarioHasDied(true);
             }
         }
     }

@@ -17,7 +17,7 @@ MonoBehaviour:
   PiranhaPlantActiveDuration: 2.5
   PiranhaPlantHiddenDurationMin: 2
   PiranhaPlantHiddenDurationMax: 4
-  FirePiranhaPlantOffsetY: 1.5
+  FirePiranhaPlantOffsetY: 2
   FirePiranhaPlantAnimationDuration: 0.75
   FirePiranhaPlantActiveDuration: 2.5
   FirePiranhaPlantHiddenDurationMin: 2

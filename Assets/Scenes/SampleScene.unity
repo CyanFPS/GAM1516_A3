@@ -244,7 +244,7 @@ Transform:
   m_GameObject: {fileID: 226132997}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -1.05, z: 0}
+  m_LocalPosition: {x: -0.03, y: -1.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -260,7 +260,7 @@ Animator:
   m_GameObject: {fileID: 226132997}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 63ff16f83b440c34d9f308fe4197fbbe, type: 2}
+  m_Controller: {fileID: 9100000, guid: ca53f2a1823d88b47915fdae4a774765, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -533,7 +533,7 @@ Transform:
   m_GameObject: {fileID: 1142051655}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 8}
+  m_LocalPosition: {x: 0.02, y: 0, z: 8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8077,6 +8077,7 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: db03c3112da0c7b4b9e0aa011d60784a, type: 2}
   marioGameObject: {fileID: 1267319377}
   deadMarioPrefab: {fileID: 6810450972784770281, guid: 57ff4287832f7e84c8a8ab81984d1d05, type: 3}
+  fireballPrefab: {fileID: 4792891982122200116, guid: f0c654b0d0f241b459d9deb34cc5483b, type: 3}
 --- !u!4 &1941876774
 Transform:
   m_ObjectHideFlags: 0

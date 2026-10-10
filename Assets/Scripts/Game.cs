@@ -10,8 +10,10 @@ public class Game : MonoBehaviour
     public GameSettings settings;
     public GameObject marioGameObject;
     public GameObject deadMarioPrefab;
+    public GameObject fireballPrefab;
 
     private GameObject deadMario = null;
+    private GameObject fireball = null;
     private Vector2 marioSpawnLocation = Vector2.zero;
     private float localTimeScale = 1.0f;
 
@@ -162,5 +164,16 @@ public class Game : MonoBehaviour
                 deadMario = Instantiate(deadMarioPrefab, new Vector3(location.x, location.y, -1.5f), Quaternion.identity);
             }
         }
+    }
+
+    public void SpawnFireball(Vector2 location, Vector2 velocity)
+    {
+            if (fireballPrefab != null)
+            {
+                fireball = Instantiate(fireballPrefab, new Vector3(location.x, location.y, -1.5f), Quaternion.identity);
+                Fireball fireballScript = fireball.GetComponent<Fireball>();
+                fireballScript.Spawn(velocity);
+            }
+        
     }
 }
